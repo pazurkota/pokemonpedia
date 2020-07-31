@@ -22,10 +22,9 @@ export class PokemonCardComponent implements OnInit {
 
       this.pokemon = {
       name: Response.name,
-      type: this.translateTypeName(
-        Response.types[0].type.name
-      ),
-      imageUrl: Response.sprites.front_default
+      type: Response.types[0].type.name,
+      imageUrl: Response.sprites.front_default,
+      polishType: this.translateTypeName(Response.types[0].type.name),
       };
     });
   }
