@@ -3,14 +3,32 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
+import { MatCardModule } from '@angular/material/card';
+import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PokemonListComponent,
+    PokemonCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatCardModule,
+    HttpClientModule,
+    MatPaginatorModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
