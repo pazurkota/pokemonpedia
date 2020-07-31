@@ -24,7 +24,7 @@ export class PokemonCardComponent implements OnInit {
       name: Response.name,
       type: Response.types[0].type.name,
       imageUrl: Response.sprites.front_default,
-      polishType: this.translateTypeName(Response.types[0].type.name),
+      polishType: this.translateTypeName(Response.types[0].type.name)
       };
     });
   }
