@@ -13,6 +13,7 @@ export class PokemonCardComponent implements OnInit {
   cardData: PokemonCard;
 
   pokemon: Pokemon;
+  defaultImageSrc = "../../assets/pokeball.png";
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
