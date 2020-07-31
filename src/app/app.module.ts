@@ -29,7 +29,7 @@ import { PokemonDetailsCardComponent } from './pokemon-details-card/pokemon-deta
     MatToolbarModule,
     MatCardModule,
     HttpClientModule,
-    MatPaginatorModule,
+    MatPaginatorModule
 
   ],
   providers: [],
