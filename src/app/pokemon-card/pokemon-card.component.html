@@ -1,4 +1,6 @@
-<mat-card class="pokemon-card" *ngIf = "pokemon && pokemon.name">
+<mat-card class="pokemon-card clickable" *ngIf = "pokemon && pokemon.name"
+routerLink="/pokemons/details/{{ pokemon.name }}"
+>
   <mat-card-header>
     <mat-card-title class="pokemon-font pokemon-name">
       {{ pokemon.name }}
