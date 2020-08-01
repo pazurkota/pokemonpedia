@@ -31,41 +31,41 @@ export class PokemonCardComponent implements OnInit {
   translateTypeName(type: string): string { // tłumaczenie typów pokemonów
     switch(type) {
       case "normal":
-        return "normalny";
+        return "NORMALNY";
       case "fire":
-        return "ognisty";
+        return "OGNISTY";
       case "water":
-        return "wodnisty";
+        return "WODNISTY";
       case "electric":
-        return "elektryczny";
+        return "ELEKTRYCZNY";
       case "grass":
-        return "trawiasty";
+        return "TRAWIASTY";
       case "ice":
-        return "lodowy";
+        return "LODOWY";
       case "fighting":
-        return "walczący";
+        return "WALCZĄCY";
       case "poison":
-        return "trujący";
+        return "TRUJĄCY";
       case "ground":
-        return "ziemisty";
+        return "ZIEMISTY";
       case "flying":
-        return "latający";
+        return "LATAJĄCY";
       case "psychic":
-        return "psychiczny";
+        return "PSYCHICZNY";
       case "bug":
-        return "robak";
+        return "ROBAK";
       case "rock":
-        return "skalny";
+        return "SKALNY";
       case "ghost":
-        return "duch";
+        return "DUCH";
       case "dragon":
-        return "smok";
+        return "SMOK";
       case "dark":
-        return "mrok";
+        return "MROK";
       case "steel":
-        return "stalowy";
+        return "STALOWY";
       case "fairy":
-        return "baśniowy"
+        return "BAŚNIOWY"
       default:
         return "niezidentyfikowany"
     }

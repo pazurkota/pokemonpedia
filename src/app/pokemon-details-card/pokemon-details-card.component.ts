@@ -13,7 +13,7 @@ export class PokemonDetailsCardComponent implements OnInit {
   pokemon: Pokemon;
 
   inputPokemonName: string;
-  defaultImageSrc = "../../assets/pokeball.png"
+  defaultImageSrc = "../../assets/pokeball.png";
   constructor(
     private activatedRoute: ActivatedRoute,
     private httpClient: HttpClient
