@@ -12,6 +12,12 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { PokemonDetailsCardComponent } from './pokemon-details-card/pokemon-details-card.component';
+import { PokemonSearchFormComponent } from './pokemon-search-form/pokemon-search-form.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -19,7 +25,8 @@ import { PokemonDetailsCardComponent } from './pokemon-details-card/pokemon-deta
     AppComponent,
     PokemonListComponent,
     PokemonCardComponent,
-    PokemonDetailsCardComponent
+    PokemonDetailsCardComponent,
+    PokemonSearchFormComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,12 @@ import { PokemonDetailsCardComponent } from './pokemon-details-card/pokemon-deta
     MatToolbarModule,
     MatCardModule,
     HttpClientModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatButtonModule,
+    MatInputModule,
 
   ],
   providers: [],

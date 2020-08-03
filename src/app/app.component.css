@@ -2,3 +2,14 @@ mat-toolbar .pokemon-font {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.mat-toolbar {
+  position: sticky;
+  flex-wrap: wrap;
+  z-index: 1;
+}
