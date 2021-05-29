@@ -13,6 +13,7 @@ export class PokemonCardComponent implements OnInit {
   cardData: PokemonCard;
 
   pokemon: Pokemon;
+  defaultImageSrc = "../../assets/pokeball.png"; // obrazek defaultowy [../../assets/pokeball.png]
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
@@ -22,11 +23,53 @@ export class PokemonCardComponent implements OnInit {
       this.pokemon = {
       name: Response.name,
       type: Response.types[0].type.name,
-      imageUrl: Response.sprites.front_default
+      imageUrl: Response.sprites.front_default,
+      polishType: this.translateTypeName(Response.types[0].type.name)
       };
     });
   }
-
+  translateTypeName(type: string): string { // tłumaczenie typów pokemonów
+    switch(type) {
+      case "normal":
+        return "NORMALNY";
+      case "fire":
+        return "OGNISTY";
+      case "water":
+        return "WODNISTY";
+      case "electric":
+        return "ELEKTRYCZNY";
+      case "grass":
+        return "TRAWIASTY";
+      case "ice":
+        return "LODOWY";
+      case "fighting":
+        return "WALCZĄCY";
+      case "poison":
+        return "TRUJĄCY";
+      case "ground":
+        return "ZIEMISTY";
+      case "flying":
+        return "LATAJĄCY";
+      case "psychic":
+        return "PSYCHICZNY";
+      case "bug":
+        return "ROBAK";
+      case "rock":
+        return "SKALNY";
+      case "ghost":
+        return "DUCH";
+      case "dragon":
+        return "SMOK";
+      case "dark":
+        return "MROK";
+      case "steel":
+        return "STALOWY";
+      case "fairy":
+        return "BAŚNIOWY"
+      default:
+        return "niezidentyfikowany"
+    }
+  }
   }
 
 
