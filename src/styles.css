@@ -7,3 +7,15 @@ mat-card .pokemon-font,
 mat-toolbar .pokemon-font {
   font-family: 'Press Start 2P', cursive;
 }
+
+mat-card {
+  width: 400px;
+}
+
+.centered {
+  margin: 20px auto;
+}
+
+.clickable {
+  cursor: pointer;
+}
